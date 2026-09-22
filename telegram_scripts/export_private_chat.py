@@ -22,7 +22,7 @@ def building_args():
 
 
 async def main(target_chat:str,output_file: str):
-    target_chat = int(target_chat)
+    target_chat = await client.get_entity(target_chat)
     with open(output_file, "a", encoding="utf-8") as f:
         async for message in client.iter_messages(target_chat, reverse=True):
             if message.text:
