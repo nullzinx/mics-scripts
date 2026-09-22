@@ -1,0 +1,9 @@
+.env
+CACHEDIR.TAG
+var/
+__pycache__/
+lib/
+include/
+session.session
+bin/
+pyvenv.cfg
